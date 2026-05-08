@@ -1,0 +1,25 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build:css && npx @11ty/eleventy --serve",
+    "build": "npm run build:css && npx @11ty/eleventy",
+    "build:css": "mkdir -p ./_site/assets/css && npx tailwindcss-cli build -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.14",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "tailwindcss-cli": "^0.1.2"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title | default("Bhaskar Goswami - Academic Site") }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="max-w-4xl mx-auto py-4 sticky top-0 bg-white shadow-md z-10 container mx-auto px-4">
+    <h1 class="text-3xl font-bold">{{ title | default("Bhaskar Goswami") }}</h1>
+    <nav class="mt-2 space-x-4">
+        <a href="/" class="text-blue-600 hover:underline {% if page.url == '/' %}shadow-md{% endif %}">Home</a>
+        <a href="/about/" class="text-blue-600 hover:underline {% if page.url == '/about/' %}shadow-md{% endif %}">About</a>
+        <a href="/research/" class="text-blue-600 hover:underline {% if page.url == '/research/' %}shadow-md{% endif %}">Research</a>
+        <a href="/publications/" class="text-blue-600 hover:underline {% if page.url == '/publications/' %}shadow-md{% endif %}">Publications</a>
+        <a href="/cv/" class="text-blue-600 hover:underline {% if page.url == '/cv/' %}shadow-md{% endif %}">CV</a>
+    </nav>
+  </header>
+  <main class="max-w-4xl mx-auto py-6 fadeIn">
+    {{ content | safe }}
+  </main>
+  <footer class="max-w-4xl mx-auto py-4 text-center text-sm text-gray-600">
+    © 2026 Bhaskar Goswami. All rights reserved.
+  </footer>
+</body>
+</html>
