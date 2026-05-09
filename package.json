@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run build:css && npx @11ty/eleventy --serve",
     "build": "npm run build:css && npx @11ty/eleventy",
-    "build:css": "mkdir -p ./_site/assets/css && npx tailwindcss-cli build -i ./src/assets/css/tailwind.css -o ./_site/assets/css/style.css --minify",
+    "build:css": "mkdir -p docs/assets/css && npx tailwindcss-cli build -i ./src/assets/css/tailwind.css -o docs/assets/css/style.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
