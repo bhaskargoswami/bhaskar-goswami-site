@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("images");
   return {
+    pathPrefix: "/bhaskar-goswami-site/",
     dir: {
       input: "src",
       includes: "_includes",
