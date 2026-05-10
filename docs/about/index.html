@@ -25,11 +25,19 @@
 
   <!-- Navigation -->
   <header class="content-layer sticky top-0 z-50 backdrop-blur-md bg-space-900/70 border-b border-space-700/50">
-    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/bhaskar-goswami-site/" class="text-xl font-bold tracking-tight hover:text-nebula-400 transition-colors duration-300">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
+      <a href="/bhaskar-goswami-site/" class="text-lg md:text-xl font-bold tracking-tight hover:text-nebula-400 transition-colors duration-300">
         Dr. Bhaskar Goswami
       </a>
-      <nav class="flex items-center gap-1">
+      <!-- Hamburger button (mobile) -->
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg text-starlight-200 hover:bg-space-800/50 transition-colors" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path id="menu-icon-open" d="M3 6h18M3 12h18M3 18h18"/>
+          <path id="menu-icon-close" class="hidden" d="M6 6l12 12M6 18L18 6"/>
+        </svg>
+      </button>
+      <!-- Nav links -->
+      <nav id="nav-links" class="hidden md:flex md:items-center md:gap-1 absolute md:relative top-full left-0 right-0 md:top-auto bg-space-900 md:bg-transparent border-b border-space-700/50 md:border-0 px-4 md:px-0 pb-4 md:pb-0 flex-col md:flex-row">
         <a href="/bhaskar-goswami-site/"
            class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
                   text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
@@ -107,6 +115,17 @@
   <!-- Inline JavaScript -->
   <script>
     (function() {
+      // Mobile hamburger menu toggle
+      var menuBtn = document.getElementById('menu-btn');
+      var navLinks = document.getElementById('nav-links');
+      if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', function() {
+          var isOpen = navLinks.classList.contains('flex');
+          navLinks.classList.toggle('flex', !isOpen);
+          navLinks.classList.toggle('hidden', isOpen);
+        });
+      }
+
       // Starfield generator
       function generateStars(count, layerId, isDim, spread) {
         var el = document.getElementById(layerId);
