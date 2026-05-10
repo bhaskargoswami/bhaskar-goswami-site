@@ -1,47 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research</title>
+  <title>Research | Bhaskar Goswami</title>
   <link rel="stylesheet" href="/bhaskar-goswami-site/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <header class="max-w-4xl mx-auto py-4 sticky top-0 bg-white shadow-md z-10 container mx-auto px-4">
-    <h1 class="text-3xl font-bold">Research</h1>
-    <nav class="mt-2 space-x-4">
-        <a href="/bhaskar-goswami-site/" class="text-blue-600 hover:underline ">Home</a>
-        <a href="/bhaskar-goswami-site/about/" class="text-blue-600 hover:underline ">About</a>
-        <a href="/bhaskar-goswami-site/research/" class="text-blue-600 hover:underline shadow-md">Research</a>
-        <a href="/bhaskar-goswami-site/publications/" class="text-blue-600 hover:underline ">Publications</a>
-        <a href="/bhaskar-goswami-site/cv/" class="text-blue-600 hover:underline ">CV</a>
-    </nav>
+<body class="bg-space-950 text-starlight-50 font-sans antialiased">
+
+  <!-- Starfield background -->
+  <div class="starfield" id="starfield" aria-hidden="true">
+    <div class="starfield-layer-1" id="stars1"></div>
+    <div class="starfield-layer-2" id="stars2"></div>
+  </div>
+
+  <!-- Shooting stars -->
+  <div class="shooting-star-container" aria-hidden="true">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="content-layer sticky top-0 z-50 backdrop-blur-md bg-space-900/70 border-b border-space-700/50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/bhaskar-goswami-site/" class="text-xl font-bold tracking-tight hover:text-nebula-400 transition-colors duration-300">
+        Bhaskar Goswami
+      </a>
+      <nav class="flex items-center gap-1">
+        <a href="/bhaskar-goswami-site/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          Home
+        </a>
+        <a href="/bhaskar-goswami-site/about/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          About
+        </a>
+        <a href="/bhaskar-goswami-site/research/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-nebula-400 bg-nebula-500/10
+                  ">
+          Research
+        </a>
+        <a href="/bhaskar-goswami-site/publications/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          Publications
+        </a>
+        <a href="/bhaskar-goswami-site/cv/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          CV
+        </a>
+      </nav>
+    </div>
   </header>
-  <main class="max-w-4xl mx-auto py-6 fadeIn">
-    <section class="mt-8 fadeIn">
-  <h2 class="text-2xl font-semibold mb-4">Research Overview</h2>
-  <p class="text-lg text-gray-700">
-    I investigate the light‑scattering properties of cosmic dust and their impact on the observable universe. By combining computational modelling with polarimetric techniques, I study how tiny dust particles in comets, asteroids, and interstellar clouds influence planetary system formation and the evolution of life on Earth. My work spans:
+
+  <!-- Main content -->
+  <main class="content-layer max-w-5xl mx-auto px-6 py-12">
+    <h1 class="reveal text-3xl md:text-4xl font-bold mb-8">Research</h1>
+
+<section class="reveal p-6 rounded-xl bg-space-900 border border-space-700/50 mb-8">
+  <h2 class="text-xl font-semibold text-nebula-400 mb-4">Research Overview</h2>
+  <p class="text-starlight-200 leading-relaxed mb-6">
+    I investigate the light-scattering properties of cosmic dust and their impact
+    on the observable universe. By combining computational modelling with
+    polarimetric techniques, I study how tiny dust particles in comets, asteroids,
+    and interstellar clouds influence planetary system formation and the evolution
+    of life on Earth. My work spans:
   </p>
-  <ul class="list-disc list-inside text-gray-700 mt-4">
-    <li>Scattering behaviour of dust in comets and asteroids as they approach the Sun.</li>
-    <li>Polarisation properties of dust in dark clouds and star clusters.</li>
-    <li>Correlation between polarisation maxima/minima and scattering parameters.</li>
-    <li>Umov effect studies for silicate, organic, and carbon aggregates.</li>
+  <ul class="space-y-3 text-starlight-200">
+    <li class="flex items-start gap-3">
+      <span class="text-comet-400 mt-0.5 shrink-0">&#9733;</span>
+      <span>Scattering behaviour of dust in comets and asteroids as they approach the Sun.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="text-nebula-400 mt-0.5 shrink-0">&#9678;</span>
+      <span>Polarisation properties of dust in dark clouds and star clusters.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="text-comet-500 mt-0.5 shrink-0">&#9679;</span>
+      <span>Correlation between polarisation maxima/minima and scattering parameters.</span>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="text-rust-500 mt-0.5 shrink-0">&#9671;</span>
+      <span>Umov effect studies for silicate, organic, and carbon aggregates.</span>
+    </li>
   </ul>
 </section>
 
-<section class="mt-8 fadeIn">
-  <h2 class="text-2xl font-semibold mb-4">Research Schools & Projects</h2>
-  <ul class="list-disc list-inside text-gray-700">
-    <li>IFAS (Indo‑French Astronomy School), IUCAA – Nov 2022.</li>
-    <li>‘SITARE’ (Southampton‑IUCAA training), University of Southampton – Mar 2019 (STFC‑GCRF funded).</li>
+<section class="reveal p-6 rounded-xl bg-space-900 border border-space-700/50">
+  <h2 class="text-xl font-semibold text-comet-400 mb-4">Research Schools &amp; Projects</h2>
+  <ul class="space-y-4">
+    <li class="flex items-start gap-3">
+      <span class="text-starlight-400 mt-1 shrink-0">&bull;</span>
+      <div>
+        <span class="text-starlight-50 font-medium">IFAS (Indo-French Astronomy School)</span>
+        <span class="block text-sm text-starlight-400">IUCAA &mdash; November 2022</span>
+      </div>
+    </li>
+    <li class="flex items-start gap-3">
+      <span class="text-starlight-400 mt-1 shrink-0">&bull;</span>
+      <div>
+        <span class="text-starlight-50 font-medium">SITARE (Southampton-IUCAA training)</span>
+        <span class="block text-sm text-starlight-400">University of Southampton &mdash; March 2019 (STFC-GCRF funded)</span>
+      </div>
+    </li>
   </ul>
 </section>
-
   </main>
-  <footer class="max-w-4xl mx-auto py-4 text-center text-sm text-gray-600">
-    © 2026 Bhaskar Goswami. All rights reserved.
+
+  <!-- Footer -->
+  <footer class="content-layer border-t border-space-700/50 bg-space-900/50">
+    <div class="max-w-5xl mx-auto px-6 py-8 text-center">
+      <p class="text-starlight-400 text-sm">&copy; 2026 Bhaskar Goswami. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    (function() {
+      // Starfield generator
+      function generateStars(count, layerId, isDim, spread) {
+        var el = document.getElementById(layerId);
+        if (!el) return;
+        var shadows = [];
+        var color = isDim ? 'oklch(0.68 0.08 265)' : '#fff';
+        for (var i = 0; i < count; i++) {
+          var x = Math.floor(Math.random() * spread);
+          var y = Math.floor(Math.random() * spread);
+          shadows.push(x + 'px ' + y + 'px ' + color);
+        }
+        el.style.boxShadow = shadows.join(', ');
+      }
+
+      var spread = Math.max(window.innerWidth, window.innerHeight, 2000);
+      generateStars(200, 'stars1', false, spread);
+      generateStars(100, 'stars2', true, spread);
+
+      // Scroll-reveal Intersection Observer
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in-up');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.reveal').forEach(function(el) {
+          observer.observe(el);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

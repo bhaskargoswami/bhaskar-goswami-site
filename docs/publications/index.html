@@ -1,38 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications</title>
+  <title>Publications | Bhaskar Goswami</title>
   <link rel="stylesheet" href="/bhaskar-goswami-site/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <header class="max-w-4xl mx-auto py-4 sticky top-0 bg-white shadow-md z-10 container mx-auto px-4">
-    <h1 class="text-3xl font-bold">Publications</h1>
-    <nav class="mt-2 space-x-4">
-        <a href="/bhaskar-goswami-site/" class="text-blue-600 hover:underline ">Home</a>
-        <a href="/bhaskar-goswami-site/about/" class="text-blue-600 hover:underline ">About</a>
-        <a href="/bhaskar-goswami-site/research/" class="text-blue-600 hover:underline ">Research</a>
-        <a href="/bhaskar-goswami-site/publications/" class="text-blue-600 hover:underline shadow-md">Publications</a>
-        <a href="/bhaskar-goswami-site/cv/" class="text-blue-600 hover:underline ">CV</a>
-    </nav>
+<body class="bg-space-950 text-starlight-50 font-sans antialiased">
+
+  <!-- Starfield background -->
+  <div class="starfield" id="starfield" aria-hidden="true">
+    <div class="starfield-layer-1" id="stars1"></div>
+    <div class="starfield-layer-2" id="stars2"></div>
+  </div>
+
+  <!-- Shooting stars -->
+  <div class="shooting-star-container" aria-hidden="true">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="content-layer sticky top-0 z-50 backdrop-blur-md bg-space-900/70 border-b border-space-700/50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/bhaskar-goswami-site/" class="text-xl font-bold tracking-tight hover:text-nebula-400 transition-colors duration-300">
+        Bhaskar Goswami
+      </a>
+      <nav class="flex items-center gap-1">
+        <a href="/bhaskar-goswami-site/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          Home
+        </a>
+        <a href="/bhaskar-goswami-site/about/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          About
+        </a>
+        <a href="/bhaskar-goswami-site/research/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          Research
+        </a>
+        <a href="/bhaskar-goswami-site/publications/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-nebula-400 bg-nebula-500/10
+                  ">
+          Publications
+        </a>
+        <a href="/bhaskar-goswami-site/cv/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          CV
+        </a>
+      </nav>
+    </div>
   </header>
-  <main class="max-w-4xl mx-auto py-6 fadeIn">
-    <section class="mt-8 fadeIn">
-  <h2 class="text-2xl font-semibold mb-4">Selected Publications</h2>
-  <ul class="list-disc list-inside text-gray-700 space-y-3">
-    <li><strong>Goswami, B.</strong>, Das, H. S., Devi, N., &amp; Halder, P. (2024). Influence of porosity on the Umov effect in silicate and organic refractory aggregates. <em>Journal of Quantitative Spectroscopy and Radiative Transfer</em>, 323, 109019.</li>
-    <li><strong>Goswami, B.</strong> &amp; Das, H. S. (2023). A study of the correlation between polarization maximum to minimum ratio and scattering parameters in a spheroid dust model. <em>Journal of Quantitative Spectroscopy and Radiative Transfer</em>, 309, 108689.</li>
-    <li><strong>Goswami, B.</strong> &amp; Das, H. S. (2022). Study of the Umov effect with carbon aggregates. <em>Chemical Journal of Karimganj College</em>, 6(1), 35–39.</li>
-    <li>Choudhury, G., <strong>Goswami, B.</strong>, Das, H., Medhi, B., &amp; Pandey, J. (2024). Probing the magnetic field and dust grain properties of two dark clouds L1495 and L1498 through photopolarimetry. <em>Monthly Notices of the Royal Astronomical Society</em>, 528(4), 7156–7164. <a href="https://doi.org/10.1093/mnras/stae100" class="text-blue-600 hover:underline">doi</a></li>
-    <li>Devi, N. N., Das, H. S., Suklabaidya, A., &amp; <strong>Goswami, B.</strong> (2025). The Umov effect in polydisperse dust aggregates. <em>Journal of Quantitative Spectroscopy and Radiative Transfer</em>. <a href="https://doi.org/10.1016/j.jqsrt.2025.xxxxx" class="text-blue-600 hover:underline">doi</a></li>
-    <li>Prasad, B., Das, H. S., Choudhury, G. B., et al. (2025). Phase‑Polarisation Analysis of Asteroids 13 Egeria and 511 Davida: New Low Phase Angle Observations and C‑Type Comparisons. <em>Solar System Research</em> (in press).</li>
+
+  <!-- Main content -->
+  <main class="content-layer max-w-5xl mx-auto px-6 py-12">
+    <h1 class="reveal text-3xl md:text-4xl font-bold mb-8">Publications</h1>
+
+<section class="reveal p-6 rounded-xl bg-space-900 border border-space-700/50">
+  <h2 class="text-xl font-semibold text-nebula-400 mb-6">Selected Publications</h2>
+  <ul class="space-y-6">
+    <li class="pb-6 border-b border-space-700/50 last:border-b-0 last:pb-0">
+      <p class="text-starlight-200 leading-relaxed">
+        <strong>Goswami, B.</strong>, Das, H.&nbsp;S., Devi, N., &amp; Halder, P. (2024).
+        Influence of porosity on the Umov effect in silicate and organic refractory aggregates.
+        <em class="text-starlight-400">Journal of Quantitative Spectroscopy and Radiative Transfer</em>, 323, 109019.
+      </p>
+    </li>
+    <li class="pb-6 border-b border-space-700/50 last:border-b-0 last:pb-0">
+      <p class="text-starlight-200 leading-relaxed">
+        <strong>Goswami, B.</strong> &amp; Das, H.&nbsp;S. (2023).
+        A study of the correlation between polarization maximum to minimum ratio and scattering
+        parameters in a spheroid dust model.
+        <em class="text-starlight-400">Journal of Quantitative Spectroscopy and Radiative Transfer</em>, 309, 108689.
+      </p>
+    </li>
+    <li class="pb-6 border-b border-space-700/50 last:border-b-0 last:pb-0">
+      <p class="text-starlight-200 leading-relaxed">
+        <strong>Goswami, B.</strong> &amp; Das, H.&nbsp;S. (2022).
+        Study of the Umov effect with carbon aggregates.
+        <em class="text-starlight-400">Chemical Journal of Karimganj College</em>, 6(1), 35&ndash;39.
+      </p>
+    </li>
+    <li class="pb-6 border-b border-space-700/50 last:border-b-0 last:pb-0">
+      <p class="text-starlight-200 leading-relaxed">
+        Choudhury, G., <strong>Goswami, B.</strong>, Das, H., Medhi, B., &amp; Pandey, J. (2024).
+        Probing the magnetic field and dust grain properties of two dark clouds L1495 and L1498
+        through photopolarimetry.
+        <em class="text-starlight-400">Monthly Notices of the Royal Astronomical Society</em>, 528(4), 7156&ndash;7164.
+        <a href="https://doi.org/10.1093/mnras/stae100"
+           class="text-nebula-400 hover:text-nebula-300 transition-colors ml-1">doi</a>
+      </p>
+    </li>
+    <li class="pb-6 border-b border-space-700/50 last:border-b-0 last:pb-0">
+      <p class="text-starlight-200 leading-relaxed">
+        Devi, N.&nbsp;N., Das, H.&nbsp;S., Suklabaidya, A., &amp; <strong>Goswami, B.</strong> (2025).
+        The Umov effect in polydisperse dust aggregates.
+        <em class="text-starlight-400">Journal of Quantitative Spectroscopy and Radiative Transfer</em>.
+        <a href="https://doi.org/10.1016/j.jqsrt.2025.xxxxx"
+           class="text-nebula-400 hover:text-nebula-300 transition-colors ml-1">doi</a>
+      </p>
+    </li>
+    <li>
+      <p class="text-starlight-200 leading-relaxed">
+        Prasad, B., Das, H.&nbsp;S., Choudhury, G.&nbsp;B., et al. (2025).
+        Phase-Polarisation Analysis of Asteroids 13 Egeria and 511 Davida:
+        New Low Phase Angle Observations and C-Type Comparisons.
+        <em class="text-starlight-400">Solar System Research</em> (in press).
+      </p>
+    </li>
   </ul>
 </section>
-
   </main>
-  <footer class="max-w-4xl mx-auto py-4 text-center text-sm text-gray-600">
-    © 2026 Bhaskar Goswami. All rights reserved.
+
+  <!-- Footer -->
+  <footer class="content-layer border-t border-space-700/50 bg-space-900/50">
+    <div class="max-w-5xl mx-auto px-6 py-8 text-center">
+      <p class="text-starlight-400 text-sm">&copy; 2026 Bhaskar Goswami. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    (function() {
+      // Starfield generator
+      function generateStars(count, layerId, isDim, spread) {
+        var el = document.getElementById(layerId);
+        if (!el) return;
+        var shadows = [];
+        var color = isDim ? 'oklch(0.68 0.08 265)' : '#fff';
+        for (var i = 0; i < count; i++) {
+          var x = Math.floor(Math.random() * spread);
+          var y = Math.floor(Math.random() * spread);
+          shadows.push(x + 'px ' + y + 'px ' + color);
+        }
+        el.style.boxShadow = shadows.join(', ');
+      }
+
+      var spread = Math.max(window.innerWidth, window.innerHeight, 2000);
+      generateStars(200, 'stars1', false, spread);
+      generateStars(100, 'stars2', true, spread);
+
+      // Scroll-reveal Intersection Observer
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in-up');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.reveal').forEach(function(el) {
+          observer.observe(el);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

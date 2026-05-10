@@ -1,61 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>Bhaskar Goswami — Home | Bhaskar Goswami</title>
   <link rel="stylesheet" href="/bhaskar-goswami-site/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <header class="max-w-4xl mx-auto py-4 sticky top-0 bg-white shadow-md z-10 container mx-auto px-4">
-    <h1 class="text-3xl font-bold">Home</h1>
-    <nav class="mt-2 space-x-4">
-        <a href="/bhaskar-goswami-site/" class="text-blue-600 hover:underline shadow-md">Home</a>
-        <a href="/bhaskar-goswami-site/about/" class="text-blue-600 hover:underline ">About</a>
-        <a href="/bhaskar-goswami-site/research/" class="text-blue-600 hover:underline ">Research</a>
-        <a href="/bhaskar-goswami-site/publications/" class="text-blue-600 hover:underline ">Publications</a>
-        <a href="/bhaskar-goswami-site/cv/" class="text-blue-600 hover:underline ">CV</a>
-    </nav>
+<body class="bg-space-950 text-starlight-50 font-sans antialiased">
+
+  <!-- Starfield background -->
+  <div class="starfield" id="starfield" aria-hidden="true">
+    <div class="starfield-layer-1" id="stars1"></div>
+    <div class="starfield-layer-2" id="stars2"></div>
+  </div>
+
+  <!-- Shooting stars -->
+  <div class="shooting-star-container" aria-hidden="true">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="content-layer sticky top-0 z-50 backdrop-blur-md bg-space-900/70 border-b border-space-700/50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/bhaskar-goswami-site/" class="text-xl font-bold tracking-tight hover:text-nebula-400 transition-colors duration-300">
+        Bhaskar Goswami
+      </a>
+      <nav class="flex items-center gap-1">
+        <a href="/bhaskar-goswami-site/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-nebula-400 bg-nebula-500/10
+                  ">
+          Home
+        </a>
+        <a href="/bhaskar-goswami-site/about/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          About
+        </a>
+        <a href="/bhaskar-goswami-site/research/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          Research
+        </a>
+        <a href="/bhaskar-goswami-site/publications/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          Publications
+        </a>
+        <a href="/bhaskar-goswami-site/cv/"
+           class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300
+                  text-starlight-200 hover:text-starlight-50 hover:bg-space-800/50">
+          CV
+        </a>
+      </nav>
+    </div>
   </header>
-  <main class="max-w-4xl mx-auto py-6 fadeIn">
+
+  <!-- Main content -->
+  <main class="content-layer max-w-5xl mx-auto px-6 py-12">
     
 <!-- Hero Section -->
-<section class="bg-gradient-to-r from-indigo-100 via-purple-50 to-pink-100 py-16">
-  <div class="max-w-4xl mx-auto text-center px-4">
-    <h1 class="text-5xl font-extrabold text-gray-800 mb-4">Bhaskar Goswami</h1>
-    <p class="text-xl text-gray-600 mb-6">Academic researcher • Data scientist • Writer</p>
-    <a href="/bhaskar-goswami-site/resume.html" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition">View Resume</a>
+<section class="reveal text-center py-16 md:py-24">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+      Bhaskar <span class="text-nebula-400">Goswami</span>
+    </h1>
+    <p class="text-lg md:text-xl text-starlight-200 mb-8 font-light tracking-wide">
+      Astrophysicist &bull; Comets &bull; Asteroids &bull; Cosmic Dust &bull; Polarimetry
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/bhaskar-goswami-site/research/"
+         class="inline-block px-6 py-3 rounded-lg bg-nebula-500 text-white font-medium
+                hover:bg-nebula-600 transition-all duration-300 animate-glow-pulse">
+        Explore Research
+      </a>
+      <a href="/bhaskar-goswami-site/publications/"
+         class="inline-block px-6 py-3 rounded-lg border border-starlight-200/30 text-starlight-200 font-medium
+                hover:bg-space-800/50 hover:border-starlight-200/50 transition-all duration-300">
+        View Publications
+      </a>
+    </div>
   </div>
 </section>
 
-<div class="flex justify-center my-8">
-  <img src="/bhaskar-goswami-site/images/Profile.jpg" alt="Profile photo" class="rounded-full" style="width:4cm;height:5cm;" />
-</div>
-
-<!-- Introduction / About -->
-<section class="mt-12 max-w-4xl mx-auto px-4">
-  <p class="text-lg text-gray-700 mb-8">Welcome to my personal website. Here you can find my research papers, notes on data science, and blog posts about the latest developments in my field.</p>
-  </section>
-
-<!-- Sections -->
-<section class="mt-12 max-w-4xl mx-auto px-4">
-  <h2 class="text-3xl font-semibold mb-6">Research Papers</h2>
-  <p><a href="/bhaskar-goswami-site/papers/" class="text-indigo-600 hover:underline">Browse my papers</a></p>
+<!-- Profile with glow -->
+<section class="reveal flex justify-center my-8">
+  <div class="relative">
+    <img src="/bhaskar-goswami-site/images/Profile.jpg" alt="Bhaskar Goswami"
+         class="w-40 h-48 md:w-48 md:h-56 rounded-2xl object-cover
+                ring-2 ring-nebula-400/30 shadow-lg shadow-nebula-500/10" />
+    <div class="absolute inset-0 -z-10 blur-3xl bg-nebula-500/10 rounded-full"></div>
+  </div>
 </section>
 
-<section class="mt-12 max-w-4xl mx-auto px-4">
-  <h2 class="text-3xl font-semibold mb-6">Notes</h2>
-  <p><a href="/bhaskar-goswami-site/notes/" class="text-indigo-600 hover:underline">Read my notes</a></p>
+<!-- Introduction -->
+<section class="reveal mt-16 max-w-3xl mx-auto">
+  <p class="text-lg text-starlight-200 leading-relaxed text-center">
+    I am an astrophysicist studying the light-scattering properties of cosmic dust,
+    with a focus on comets, asteroids, and interstellar clouds. My work combines
+    computational modelling with polarimetric techniques to understand how tiny
+    dust particles shape our observable universe.
+  </p>
 </section>
 
-<section class="mt-12 max-w-4xl mx-auto px-4 mb-16">
-  <h2 class="text-3xl font-semibold mb-6">Blog / News</h2>
-  <p><a href="/bhaskar-goswami-site/blog/" class="text-indigo-600 hover:underline">Read my blog posts</a></p>
+<!-- Research Areas Grid -->
+<section class="reveal mt-20">
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Research Focus</h2>
+  <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+    <div class="p-6 rounded-xl bg-space-900 border border-space-700/50 hover:border-nebula-400/30 transition-all duration-500 hover:-translate-y-1">
+      <span class="text-comet-400 text-2xl">&#9733;</span>
+      <h3 class="text-lg font-semibold mt-2 mb-2">Cometary Dust</h3>
+      <p class="text-starlight-400 text-sm leading-relaxed">
+        Scattering behaviour of dust in comets and asteroids as they approach the Sun.
+      </p>
+    </div>
+    <div class="p-6 rounded-xl bg-space-900 border border-space-700/50 hover:border-nebula-400/30 transition-all duration-500 hover:-translate-y-1">
+      <span class="text-nebula-400 text-2xl">&#9678;</span>
+      <h3 class="text-lg font-semibold mt-2 mb-2">Polarimetry</h3>
+      <p class="text-starlight-400 text-sm leading-relaxed">
+        Polarisation properties of dust in dark clouds and star clusters.
+      </p>
+    </div>
+    <div class="p-6 rounded-xl bg-space-900 border border-space-700/50 hover:border-nebula-400/30 transition-all duration-500 hover:-translate-y-1">
+      <span class="text-comet-500 text-2xl">&#9679;</span>
+      <h3 class="text-lg font-semibold mt-2 mb-2">Umov Effect</h3>
+      <p class="text-starlight-400 text-sm leading-relaxed">
+        Correlation between polarisation maxima/minima and scattering parameters.
+      </p>
+    </div>
+    <div class="p-6 rounded-xl bg-space-900 border border-space-700/50 hover:border-nebula-400/30 transition-all duration-500 hover:-translate-y-1">
+      <span class="text-rust-500 text-2xl">&#9671;</span>
+      <h3 class="text-lg font-semibold mt-2 mb-2">Dust Aggregates</h3>
+      <p class="text-starlight-400 text-sm leading-relaxed">
+        Umov effect studies for silicate, organic, and carbon aggregates.
+      </p>
+    </div>
+  </div>
 </section>
 
+<!-- Links -->
+<section class="reveal mt-20 mb-16 text-center">
+  <div class="flex flex-wrap justify-center gap-6">
+    <a href="/bhaskar-goswami-site/publications/" class="text-nebula-400 hover:text-nebula-300 underline underline-offset-4 decoration-1 decoration-nebula-400/30 transition-colors">
+      Publications &rarr;
+    </a>
+    <a href="/bhaskar-goswami-site/about/" class="text-nebula-400 hover:text-nebula-300 underline underline-offset-4 decoration-1 decoration-nebula-400/30 transition-colors">
+      About me &rarr;
+    </a>
+  </div>
+</section>
   </main>
-  <footer class="max-w-4xl mx-auto py-4 text-center text-sm text-gray-600">
-    © 2026 Bhaskar Goswami. All rights reserved.
+
+  <!-- Footer -->
+  <footer class="content-layer border-t border-space-700/50 bg-space-900/50">
+    <div class="max-w-5xl mx-auto px-6 py-8 text-center">
+      <p class="text-starlight-400 text-sm">&copy; 2026 Bhaskar Goswami. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    (function() {
+      // Starfield generator
+      function generateStars(count, layerId, isDim, spread) {
+        var el = document.getElementById(layerId);
+        if (!el) return;
+        var shadows = [];
+        var color = isDim ? 'oklch(0.68 0.08 265)' : '#fff';
+        for (var i = 0; i < count; i++) {
+          var x = Math.floor(Math.random() * spread);
+          var y = Math.floor(Math.random() * spread);
+          shadows.push(x + 'px ' + y + 'px ' + color);
+        }
+        el.style.boxShadow = shadows.join(', ');
+      }
+
+      var spread = Math.max(window.innerWidth, window.innerHeight, 2000);
+      generateStars(200, 'stars1', false, spread);
+      generateStars(100, 'stars2', true, spread);
+
+      // Scroll-reveal Intersection Observer
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in-up');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.reveal').forEach(function(el) {
+          observer.observe(el);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
